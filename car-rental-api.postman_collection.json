@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "ac32e202-047f-4f0c-99f3-f3104e7bdf4c",
+		"name": "car-rental-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/api/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"akheel\",\r\n    \"email\":\"akheel@gmail.com\",\r\n    \"password\":\"!@#$Ponda\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/register",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"akheel@gmail.com\",\r\n\"password\":\"!@#$Ponda\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cars",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"zen\",\r\n    \"typeId\":\"6082bb7cb6da38233cd787af\",\r\n    \"numberInStock\": 5,\r\n    \"price\":25,\r\n    \"capacity\":5,\r\n    \"color\":\"red\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/cars",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/cars",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"zen\",\r\n    \"typeId\":\"6082bb7cb6da38233cd787af\",\r\n    \"numberInStock\": 5,\r\n    \"price\":25,\r\n    \"capacity\":5,\r\n    \"color\":\"red\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/cars",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/types",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sedan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/types",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"types"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/rentals",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"carId\":\"6082c3d93264742504ac8428\",\r\n    \"days\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/rentals",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"rentals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/rentals",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sedan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/rentals",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"rentals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/self",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sedan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/rentals/self",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"rentals",
+						"self"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/rentals/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"sedan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/rentals/:id",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"rentals",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "6082c045ba1e76367441defb"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/returns",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDgyYjYwZGI2ZWYyODFkMThhMWI0ZTAiLCJuYW1lIjoiYWtoZWVsIiwiZW1haWwiOiJha2hlZWxAZ21haWwuY29tIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjE5MTc5NzE3fQ.ZF94ylkFLuF6Dn0e21B5WW5Vk8T6WIdG4u6o7dZDjis"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"carId\":\"6082c045ba1e76367441defb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/returns",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"returns"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:3000"
+		}
+	]
+}
